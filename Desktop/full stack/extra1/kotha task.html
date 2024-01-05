@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>position</title>
+        <style>
+            .a{
+                height: 600px;
+                width: 806px;
+                border: 2px solid black;
+                float: left;
+            }
+            .b{
+                height: 300px;
+                width: 200px;
+                border: 1px solid black;
+                float: left;
+            }
+            .c{
+                height: 245px;
+                width: 185px;
+                border: 1px solid black;
+                float: left;
+                margin-bottom: 3px;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+            .d{
+                height: 80px;
+                width: 80px;
+                border: 1px solid black;
+                /* float: left; */
+                background-color: skyblue;
+            }
+            .e{
+                height: 80px;
+                width: 80px;
+                border: 1px solid black;
+                /* float: left; */
+                background-color: lightgreen;
+            }
+            .f{
+                height: 100px;
+                width: 100px;
+                border: 1px solid black;
+                background-color: lightgreen;
+            }
+            .g{
+                height: 245px;
+                width: 185px;
+                border: 1px solid black;
+                float: left;
+                margin-bottom: 3px;
+                margin-right: 5px;
+                margin-left: 5px;
+                overflow-y: scroll;
+            }
+            .h{
+                height: 100px;
+                width: 100px;
+                border: 1px solid black;
+                background-color: lightblue;
+            }
+            .i{
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                background-color: lightblue;
+                float: left;  
+            }
+            .j{
+                height: 100px;
+                width: 510px;
+                border: 0px solid black;
+            }
+            .K{
+                height: 100px;
+                width: 100px;
+                border: 1px solid black;
+                background-color: lightblue;
+                float: left;  
+            }
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="a">
+            <div class="b">
+                <p><b>position: static</b></p>
+                <div class="c">
+                    <div class="d"></div>
+                    <div class="e"><center><p>static</p></center></div>
+                    <div class="d"></div>
+                </div>
+            </div>
+            <div class="b">
+                <p><b>position: relative</b></p>
+                <div class="c">
+                    <div class="d"></div>
+                    <div class="e" style="position: relative;top: 15px;left: 15px;"><center><p>relative</p></center></div>
+                    <div class="d" style="position: relative;"></div>
+                </div>
+            </div>
+            <div class="b">
+                <p><b>position: absolute</b></p>
+                <div class="c">
+                    <div class="d"></div>
+                    <div class="e" style="position: absolute;top: 145px;left: 510px;"><center><p>absolute</p></center></div>
+                    <div class="d"></div>
+                </div>
+            </div>
+            <div class="b">
+                <p><b>position: fixed</b></p>
+                <div class="c">
+                    <div class="d"></div>
+                    <div class="f" style="position: fixed;top: 0px;right: 0px;"><center><p>fixed</p></center></div>
+                    <div class="d"></div>
+                </div>
+            </div>
+            <div class="b">
+                <p><b>position: sticky(top)</b></p>
+                <div class="g">
+                    <div class="h" style="bottom: 0px;"></div>
+                    <div class="f" style="position: sticky;top: 5px;"><center><p>sticky(top)</p></center></div>
+                    <div class="h" style="bottom: 0px;"></div>
+                    <div class="h" style="bottom: 0px;"></div>
+                    <div class="h" style="bottom: 0px;"></div>
+                </div>
+            </div>
+            <div class="b">
+                <p><b>position: sticky(bottom)</b></p>
+                <div class="g">
+                    <div class="h"></div>
+                    <div class="h"></div>
+                    <div class="h"></div>
+                    <div class="f" style="position: sticky;bottom: 5px;"><center><p>sticky(bottom)</p></center></div>
+                    <div class="h"></div>
+                </div>
+            </div>
+            <div class="b">
+                <p><b>position: sticky(left)</b></p>
+                <div class="g">
+                    <div class="j" style="position: left;">
+                        <div class="k"></div>
+                        <div class="f" style="position: sticky;left: 5px;float: left;"><p>sticky(left)</p></div>
+                        <div class="k"></div>
+                        <div class="k"></div>
+                        <div class="k"></div>                        
+                    </div> 
+                </div>
+            </div>
+            <div class="b">
+                <p><b>position: sticky(right)</b></p>
+                <div class="g">
+                    <div class="j" style="position: left;">
+                        <div class="k"></div>
+                        <div class="k"></div>
+                        <div class="k"></div>
+                        <div class="f" style="position: sticky;right: 5px;float: left;"><p>sticky(right)</p></div>
+                        <div class="k"></div>                        
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
