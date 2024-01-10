@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .one{
+            height: 250px;
+            width: 200px;
+            background-color: crimson;
+            float: left;
+        }
+        .one:hover{
+            transform: translate(40px ,50px);
+        }
+        .one1{
+            height: 250px;
+            width: 200px;
+            background-color: dodgerblue;
+            float: left;
+        }
+        .one1:hover{
+            transform: translateX(80px);
+        }
+        .one2{
+            height: 250px;
+            width: 200px;
+            background-color: indigo;
+            float: left;
+           
+        }
+        .one2:hover{
+            transform: translateY(80px);
+        }
+        .two{
+            height: 250px;
+            width: 200px;
+            background-color: darkorchid;
+            float: left;
+        }
+        .two:hover{
+            /* clock wise */
+            transform: rotate(60deg);
+        }
+        .two1{
+            height: 250px;
+            width: 200px;
+            background-color: goldenrod;
+            float: left;
+        }
+        .two1:hover{
+            /* clock wise */
+            transform: rotate(60deg);
+        }
+        .two2{
+            height: 250px;
+            width: 200px;
+            background-color: limegreen;
+            float: left;
+        }
+        .two2:hover{
+            /* anticlock wise */
+            transform: rotate(-60deg);
+        }
+        .three{
+            height: 250px;
+            width: 200px;
+            background-color: purple;
+            float: left;
+        }
+        .three:hover{
+            transform: scale(2);
+        }
+        .three1{
+            height: 250px;
+            width: 200px;
+            background-color: aqua;
+            float: left;
+        }
+        .three1:hover{
+            transform: scaleX(2);
+        }
+        .three2{
+            height: 250px;
+            width: 200px;
+            background-color: chocolate;
+            float: left;
+        }
+        .three2:hover{
+            transform: scaleY(2);
+        }
+        
+       .eight{
+            height: 250px;
+            width: 200px;
+            background-color: orangered;
+            border: solid darkslategray;border: solid darkslategray;
+            float: left;
+        }
+        .eight:hover{
+            /*matrix(scaleX(),scaleY(),skewX(),skewY(),translateX(),translateY())*/
+            transform: matrix(2,0,0.3,1,0,0);
+        }
+        h2{
+            color: white;
+            text-align: center;
+        }
+        .a{
+            height: 250px;
+            width: 200px;
+            background-color: darkorchid;
+            border: solid darkslategray;border: solid darkslategray;
+            float: left;
+        }
+        .a:hover{
+           transform: translate3d(40px,50px,60px);
+        }
+        @media screen and (min-width:200px) and (max-width:400px){
+            .one{
+                width: 100%;
+            }
+            .one1{
+                width: 100%;
+            }
+            .one2{
+                width: 100%;
+            }
+            .two{
+                width: 100%;
+            }
+            .two1{
+                width: 100%;
+            }
+            .two2{
+                width: 95%;
+            }
+            .three{
+                width: 100%;
+            }
+            .three1{
+                width: 100%;
+            }
+            .three2{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:400px) and (max-width:600px){
+            .one{
+                width: 50%;
+            }
+            .one1{
+                width: 50%;
+            }
+            .one2{
+                width: 50%;
+            }
+            .two{
+                width: 50%;
+            }
+            .two1{
+                width: 50%;
+            }
+            .two2{
+                width: 50%;
+            }
+            .three{
+                width: 50%;
+            }
+            .three1{
+                width: 50%;
+            }
+            .three2{
+                width: 50%;
+            } 
+        }
+        @media screen and (min-width:600px) and (max-width:800px){
+            .one{
+                width: 33%;
+            }
+            .one1{
+                width: 33%;
+            }
+            .one2{
+                width: 33%;
+            }
+            .two{
+                width: 33%;
+            }
+            .two1{
+                width: 33%;
+            }
+            .two2{
+                width: 33%;
+            }
+            .three{
+                width: 33%;
+            }
+            .three1{
+                width: 50%;
+            }
+            .three2{
+                width: 33%;
+            } 
+        }
+        @media screen and (min-width:800px) and (max-width:1000px){
+            .one{
+                width: 25%;
+            }
+            .one1{
+                width: 25%;
+            }
+            .one2{
+                width: 25%;
+            }
+            .two{
+                width: 25%;
+            }
+            .two1{
+                width: 25%;
+            }
+            .two2{
+                width: 25%;
+            }
+            .three{
+                width: 25%;
+            }
+            .three1{
+                width: 25%;
+            }
+            .three2{
+                width: 25%;
+            } 
+        }
+        @media screen and (min-width:850px) and (max-width:1050px){
+            .one{
+            width: 20%;
+        } 
+            .one1{
+            width: 20%;
+        } 
+            .one2{
+            width: 20%;
+        } 
+           .two{
+            width: 20%;
+        } 
+        .two1{
+                width: 20%;
+            }
+            .two2{
+                width: 20%;
+            }
+            .three{
+                width: 20%;
+            }
+            .three1{
+                width: 20%;
+            }
+            .three2{
+                width: 20%;
+            } 
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <center><h1>Transforms (2D) in CSS</h1></center> 
+    <hr> 
+    <div class="one"><h2>Translate</h2></div> 
+    <div class="one1"><h2>TranslateX</h2></div>
+    <div class="one2"><h2>TranslateY</h2></div>
+    <div class="two"><h2>Rotetary</h2></div> 
+    <div class="two1"><h2>Rotetary <br> clockwise</h2></div>
+    <div class="two2"><h2>Rotetary <br> Anticlockwise</h2></div>
+    <div class="three"><h2>Scale</h2></div>
+    <div class="three1"><h2>ScaleX</h2></div>
+    <div class="three2"><h2>ScaleY</h2></div>
+    <div class="four"><h2>Skew</h2></div>
+    <div class="four1"><h2>SkewX 50deg</h2></div>
+    <div class="four2"><h2>SkewY 60deg</h2></div>
+    <div class="eight"><h2>matrix</h2></div>
+    <div class="a"><h2>Transforms (3D) in CSS</h2></div>
+</body>
+</html>
