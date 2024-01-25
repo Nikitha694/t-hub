@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jan20</title>
+    <style>
+        .a{
+            height: 650px;
+            width: 1480px;
+            border: 1px solid black;
+        }
+        .button{
+            position: relative;
+            animation-name: bc;
+            animation-duration: 10s;
+            background-image: url(instagram.png);
+            background-repeat: no-repeat;
+            background-size:100%;
+        }
+        @keyframes bc {
+            0%{
+                top: 120px;left: 5px;height: 0px;width: 0px;
+            }
+            50%{
+                height: 70px;
+                width: 70px;
+                top: 120px;
+                left: 5px;
+                border: none;
+                background-color: black;
+            }
+            100%{
+                height: 70px;
+                width: 70px;
+                top: 120px;
+                left: 5px;
+                border: none;
+                background-color: black;
+            }
+        }
+        
+        .b{
+            height: 300px;
+            width: 400px;
+            border: 1px solid black;
+            animation-name: ac;
+            animation-duration: 10s;
+            
+        }
+        @keyframes ac{
+            0%{
+                height: 300px;width: 400px;background-color: white;
+            }
+            25%{
+                height: 400px;width: 300px;background-color: black;
+            }
+            50%{
+                height: 400px;width: 300px;background-color: black;
+            }
+            75%{
+                height: 400px;width: 300px;background-color: black;
+            }
+            100%{
+                height: 400px;width: 300px;background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <center>
+                <div class="button"></div>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
