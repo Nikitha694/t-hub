@@ -7,8 +7,8 @@
                 background-color: rgb(231, 231, 231);
             } */
             .a{
-                height: 45px;
-                width: 1250px;
+                height: 35px;
+                width: 100%;
                 /* border: 2px solid rgb(222, 222, 222); */
                 background-color: rgb(231, 231, 231);
             }
@@ -18,24 +18,30 @@
               background-color: rgb(231, 231, 231);
               margin-left: 30px ;
               float: left;  
+              padding-left: 10px;
             }
             .c
             {
-                height: 350px;
-                width: 800px;
+                height: 280px;
+                width: 1000px;
                 background-color: rgb(231, 231, 231);
                 float: left;
                 margin-left: 30px;
             }
             .d
             {
-                height: 450px;
-                width: 800px;
+                height: 350px;
+                width: 1000px;
                 background-color: rgb(231, 231, 231);
                 float:left;
                 margin-left: 30px;
-                margin-top: 30px;
+                margin-top: 10px;
+                padding-left: 10px;
 
+            }
+            button{
+                height: 30px;
+                color: white;
             }
             .e{
                 background-image: url(p.jpg);
@@ -47,18 +53,28 @@
                 margin-left: 115px;
             }
             form{
-                margin-left: 20px;
+              
+                margin: 20px;
+            }
+            input{
+                margin-left: 10px;
+                float: right;
+                border: 1px solid;
+                border-radius: 2px;
+            }
+            progress{
+                margin-top: 10px;
             }
                        </style>
     </head>
     <body>
         <div class="a">
-            <center><br>
+            <center>
                 <button style="background-color: greenyellow;border-radius: 5px;border-color: greenyellow;">Preview</button>
-                <button style="background-color: aqua;border-radius: 5px;border-color: aqua;">HTML</button>
-                <button style="background-color: aqua;border-radius: 5px;border-color: aqua;">CSS</button>
-                <button style="background-color: aqua;border-radius: 5px;border-color: aqua;">Download</button>
-                <select style="background-color: red;border-radius: 5px;border-color: red;"><option value="">Actions</option></select>
+                <button style="background-color: rgb(19, 157, 203);border-radius: 5px;border-color: rgb(19, 157, 203);">HTML</button>
+                <button style="background-color: rgb(19, 157, 203);border-radius: 5px;border-color: rgb(19, 157, 203);">CSS</button>
+                <button style="background-color: rgb(19, 157, 203);border-radius: 5px;border-color: rgb(19, 157, 203);">Download</button>
+                <select style="background-color: red;border-radius: 5px;border-color: red;height: 30px;color: white;"><option value="">Actions</option></select>
             </center>
         </div>
         <div>
@@ -68,50 +84,56 @@
                 <center><h3>John Doe</h3></center>
                 <center><p>Full Stack Developer</p></center>
                 <center><p>Bay Area,San Francisco,CA</p></center>
-                <center><button style="background-color: lightblue;border-radius: 3px;">Follow</button>
-                <button ;border: 1px solid rgb(19, 157, 203);border-radius: 3px;">Message</button></center>
+                <center><button style="background-color: rgb(19, 157, 203);border-radius: 3px;">Follow</button>
+                <button style=" border: 1px solid rgb(19, 157, 203);border-radius: 3px;color: rgb(19, 157, 203);">Message</button></center>
                 <hr>
-                <i class="fa-solid fa-globe"></i>&nbsp;Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://bootdey.com
-                <hr>
-                <i class="fa-brands fa-github"></i>&nbsp;Github&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bootdey
-                <hr>
-                <i class="fa-brands fa-twitter"></i>&nbsp;Twitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@bootdey
-                <hr>
-                <i class="fa-brands fa-instagram"></i>&nbsp;Instagram&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bootdey
-                <hr>
-                <i class="fa-brands fa-facebook"></i>&nbsp;Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bootdey
+                <i class="fa-solid fa-globe"></i>&nbsp;Website
+                <span style="float: right;"> https://bootdey.com</span><hr>
+                <i class="fa-brands fa-github"></i>&nbsp;Github 
+                <span style="float: right;"> bootdey.com</span><hr>
+                <i class="fa-brands fa-twitter" style="color: dodgerblue;"></i>&nbsp;Twitter 
+                <span style="float: right;">@bootdey</span><hr>
+                <i class="fa-brands fa-instagram" style="color: deeppink"></i>&nbsp;Instagram
+                <span style="float: right;">bootdey</span><hr>
+                <i class="fa-brands fa-facebook-f" style="color: dodgerblue;"></i>&nbsp;Facebook 
+                <span style="float: right;">bootdey</span>
+        
             </div>
             <div style="height: 700px;width: 700px;float: left;">
                 <div class="c">
-                    <form>
-                        <br>
-                        Full Name &nbsp;&nbsp &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" placeholder="John Doe" size="90px" style="border-radius: 5px;border: 1px solid black;"><br>
-                        <br>
-                        Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="email" placeholder="john@example.com" size="90px" style="border-radius: 5px;border: 1px solid black;"><br>
-                        <br>
-                        Phone &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="number" placeholder="(239)816-9029" size="90px" style="border-radius: 5px;border: 1px solid black;"><br>
-                        <br>
-                        Mobile &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="number" placeholder="(320)380-4539" size="90px" style="border-radius: 5px; border: 1px solid black;" ><br>
-                        <br>
-                        Address &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <input type="text" placeholder="Bay Area,San Francisco,CA" size="90px" style="border-radius: 5px;border: 1px solid black;"><br>
-                        <br>
-                        <center><button style="background-color: rgb(47, 255, 245);border-radius: 5px;">Save Changes</button></center>
-                    </form>
+                    <!-- <div style="float: left;width: 150px;border: 1px solid black;">
+                        <p><b>Full Name <br>Email</b></p>
+                    </div> -->
+                    <div style="float: left;width: 950px;margin-top: 10px;">
+                        <form>
+                            Full Name<input type="text" placeholder="John Doe" size="90px" style="height: 30px;width: 80%;">
+                            <br><br>
+                            Email<input type="email" placeholder="john@example.com" size="90px" style="height: 30px;width: 80%;">
+                            <br><br>
+                                Phone<input type="number" placeholder="(239)816-9029" size="90px" style="height: 30px;width: 80%;">
+                            <br><br>
+                            Mobile<input type="number" placeholder="(320)380-4539" size="90px" style="height: 30px;width: 80%;">
+                            <br><br>
+                            Address<input type="text" placeholder="Bay Area,San Francisco,CA" size="90px" style="height: 30px;width: 80%;"><br>
+                            <br><br>
+                            <button style="background-color: rgb(19, 157, 203);border-radius: 3px;border: 5px solid rgb(19, 157, 203);margin-left: 180px;">Save Changes</button>
+                        </form>
+                    </div>
                 </div>
                 <br>
                 <br>
                 <div class="d">
                     <h1>Project Status</h1>
-                    <p>Web Design</p>
-                    &nbsp;<progress value="75" max="100" style="width: 700px;"></progress>
-                    <p>Website Markup</p>
-                    &nbsp;<progress value="65" max="100" style="width: 700px;"></progress>
-                    <p>One Page</p>
-                    &nbsp;<progress value="85" max="100" style="width: 700px;"></progress>
-                    <p>Mobile Template</p>
-                    &nbsp;<progress value="55" max="100" style="width: 700px;"></progress>
-                    <p>Backend API</p>
-                    &nbsp;<progress value="70" max="100" style="width: 700px;"></progress>
+                    <span>Web Design</span><br>
+                    &nbsp;<progress value="75" max="100" style="width: 900px;"></progress><br>
+                    <span>Website Markup</span><br>
+                    &nbsp;<progress value="65" max="100" style="width: 900px;"></progress><br>
+                    <span>One Page</span><br>
+                    &nbsp;<progress value="85" max="100" style="width: 900px;"></progress><br>
+                    <span>Mobile Template</span><br>
+                    &nbsp;<progress value="55" max="100" style="width: 900px;"></progress><br>
+                    <span>Backend API</span><br>
+                    &nbsp;<progress value="70" max="100" style="width: 900px;color: deepskyblue;"></progress>
                 </div>
             </div>
         </div>
