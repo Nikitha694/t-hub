@@ -1,0 +1,374 @@
+<section class="doraemon">
+        <div class="doraemon_face">
+            <div class="doraemon_face__circle">
+                <div class="eyes">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nose"></div>
+                <div class="mouth">
+                    <span class="mouth_hair"></span>
+                    <span class="mouth_hair"></span>
+                </div>
+            </div>
+            <div class="doraemon_face__belt">
+                <span class="bell"></span>
+            </div>
+        </div>
+        <div class="doraemon_bottom">
+            <div class="pok_cr">
+                <span class="pok"></span>
+            </div>
+            <div class="hand">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="foot">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <h1>Vishal Sondarva</h1>
+    </section>
+    $doraemon-color: linear-gradient(45deg, #0d8daf, #5fd5f1);
+$doraemon-bell-color: #ede51f;
+$doraemon-belt-color: linear-gradient(0deg, #800c04, #be3a00);
+$doraemon-nose-color: #c93e00;
+$doraemon-borde-color: #393939;
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: white;
+}
+
+.doraemon {
+        position: relative;
+    max-width: 414px;
+    width: 100%;
+    height: 345px;
+    margin:  auto;
+  position: absolute;
+  top:50%;
+  left: 0px;
+  right: 0px;
+  transform: translateY(-50%);
+    &_face {
+        width: 220px;
+        height: 200px;
+        border: solid 2px $doraemon-borde-color;
+        border-radius: 50%;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+        background: $doraemon-color;
+        &__circle {
+            width: 170px;
+            height: 150px;
+            border: solid 2px $doraemon-borde-color;
+            border-radius: 50%;
+            background: white;
+            margin: auto;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            .eyes {
+                position: relative;
+                width: 120px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                margin-top: -20px;
+                span {
+                    width: 40px;
+                    height: 50px;
+                    border: solid 2px $doraemon-borde-color;
+                    display: block;
+                    border-radius: 25px;
+                    background-color: white;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        background: $doraemon-borde-color;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 0px;
+                        right: 0px;
+                        margin: auto;
+                        border-radius: 50px;
+                    }
+                    &:first-child {
+                        &::after {
+                            left: 20px;
+                        }
+                    }
+                    &:last-child {
+                        &::after {
+                            right: 20px;
+                        }
+                    }
+                }
+            }
+            .nose {
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                border: solid 2px $doraemon-borde-color;
+                background: $doraemon-nose-color;
+                margin: auto;
+                margin-top: -5px;
+                position: relative;
+                overflow: hidden;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 6px;
+                    right: 4px;
+                    width: 4px;
+                    height: 4px;
+                    background: #fff;
+                    border-radius: 50px;
+                    box-shadow: 0 0 5px 4px white;
+                    opacity: 0.85;
+                }
+            }
+            .mouth {
+                position: relative;
+                height: 100px;
+                width: 140px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 30px;
+                    right: 0px;
+                    left: 0px;
+                    margin: auto;
+                    width: 140px;
+                    height: 140px;
+                    border: solid 2px $doraemon-borde-color;
+                    border-radius: 100%;
+                    border-top-color: #0000;
+                    border-right-color: #0000;
+                    border-left-color: #0000;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 32px;
+                    left: 0px;
+                    right: 0px;
+                    margin: auto;
+                    width: 2px;
+                    height: 68px;
+                    background: $doraemon-borde-color;
+                }
+                &_hair {
+                    position: relative;
+                    top: 15px;
+                    width: 45px;
+                    height: 2px;
+                    background-color: $doraemon-borde-color;
+                    &::after,
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 45px;
+                        height: 2px;
+                        top: -14px;
+                        transform: rotateZ(15deg);
+                        background-color: $doraemon-borde-color;
+                    }
+                    &::after {
+                        top: 14px;
+                        transform: rotateZ(-15deg);
+                    }
+                    &:last-child {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        &__belt {
+            width: 140px;
+            height: 15px;
+            background: $doraemon-belt-color;
+            border: solid 2px $doraemon-borde-color;
+            border-radius: 20px;
+            margin: auto;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            .bell {
+                width: 25px;
+                height: 25px;
+                border: solid 2px $doraemon-borde-color;
+                background-color: $doraemon-bell-color;
+                border-radius: 50%;
+                display: block;
+                margin: auto;
+                margin-top: 2px;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    background-color: $doraemon-borde-color;
+                    border-radius: 50px;
+                    position: absolute;
+                    left: 0px;
+                    right: 0px;
+                    margin: auto;
+                    bottom: 5px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    width: 2px;
+                    height: 6px;
+                    left: 0px;
+                    right: 0px;
+                    margin: auto;
+                    background-color: $doraemon-borde-color;
+                }
+            }
+        }
+    }
+
+    &_bottom {
+        position: relative;
+        top: -10px;
+        background: $doraemon-color;
+        width: 150px;
+        height: 120px;
+        margin: auto;
+        border: solid 2px $doraemon-borde-color;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            width: 15px;
+            height: 25px;
+            border-radius: 50px;
+            background-color: white;
+            border: solid 2px #393939;
+            border-bottom-color: #0000;
+        }
+        .pok_cr {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border: solid 2px $doraemon-borde-color;
+            background: white;
+            border-radius: 50%;
+            margin-top: -20px;
+            overflow: hidden;
+            .pok {
+                display: block;
+                width: 75%;
+                height: 75%;
+                border: solid 2px $doraemon-borde-color;
+                border-radius: 50%;
+                margin: auto;
+                margin-top: 15px;
+                background: white;
+                position: relative;
+                box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.1);
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    left: -2px;
+                    width: 105%;
+                    height: 50%;
+                    background-color: white;
+                    border-bottom: solid 2px $doraemon-borde-color;
+                }
+            }
+        }
+        .foot {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            width: 130%;
+            margin-left: -15%;
+            margin-top: 15px;
+            span {
+                display: block;
+                width: 60%;
+                height: 25px;
+                border: solid 2px $doraemon-borde-color;
+                border-radius: 100px 50px 50px 30px;
+                background-color: white;
+                margin: 0 2px;
+                &:last-child {
+                    border-radius: 50px 100px 30px 50px;
+                }
+            }
+        }
+        .hand {
+            position: absolute;
+            top: 5px;
+            span {
+                position: absolute;
+                left: -47px;
+                top: 3px;
+                width: 50px;
+                height: 35px;
+                background: #2da9c8;
+                border: solid 2px $doraemon-borde-color;
+                border-right: none;
+                border-left: none;
+                transform: skew(0deg, -25deg);
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -5px;
+                    left: -20px;
+                    width: 42px;
+                    height: 45px;
+                    border-radius: 50px;
+                    border: solid 2px $doraemon-borde-color;
+                    background-color: white;
+                    transform: skew(10deg, 10deg);
+                }
+
+                &:last-child {
+                    left: 147px;
+                    transform: skew(0deg, 25deg);
+                    background: #57ceea;
+
+                    &::after {
+                        left: 20px;
+                        transform: skew(-10deg, -10deg);
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        font-size: 16px;
+        color: #000;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        opacity: 0.15;
+        position: fixed;
+        right: 0px;
+        bottom: 10px;
+      writing-mode: vertical-rl;
+    }
+}

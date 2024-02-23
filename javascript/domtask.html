@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="head">This is id</h2>
+    <h2 id="head">This is id</h2>
+    <h3 class="new">By using class</h3>
+    <h3 class="new">By using class</h3>
+        <span>By using tag</span>
+        <span>By using tag</span>
+        <span id="dis_dt">By using tag</span>
+        <script>
+            let all=document.querySelectorAll("h2,h3,span")
+            for (i=0;i<all.length;i++)
+            {
+                all[i].style.backgroundColor="pink"
+            }
+        </script>
+</body>
+</html>

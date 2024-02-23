@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events in js</h1>
+    <!-- //inline Events -->
+    <button onmouseover="sample()">click me</button>
+    <button onclick="sample1()" id="sam">Click</button>
+    <br>
+    <p id="std"></p>
+    <script>
+        function sample(){
+            document.getElementById("std").innerText="This is an event by using inline "
+            document.body.style.backgroundColor='pink';
+        }
+        function sample1(){
+            document.getElementById("sam").innerText="Thank you";
+        }
+    </script>
+</body>
+</html>

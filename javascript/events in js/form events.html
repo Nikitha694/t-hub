@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="a">
+        Name: <input type="text" name="" onchange="change(this.value)" id="c">
+        <br>
+        <br>
+        Cllg:<select style="height: 30px;width: 300px;" onchange="sample(this.value)">
+        <option>Select cllg</option>
+    <option value="AEC">AEC</option>
+    <option value="ACET">ACET</option>
+    <option value="ACOE">ACOE</option>
+    </select>
+    <p id='b'></p>
+    <button type="button" onclick="submit()" value="submit">submit</button>
+    <button type="button" onclick="reset()" value="reset">reset</button>
+    </form>
+    <script>
+        function submit(){
+            document.getElementById("a").submit()
+        }
+        function reset(){
+            document.getElementById("a").reset()
+        }
+        function change(){
+            c.value=c.value.toUppercase();
+        }
+        function sample(clg_name){
+            document.getElementById('b').innerText=clg_name;
+        }
+
+    </script>
+</body>
+</html>

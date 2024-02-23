@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px solid" style="height:100px;width:700px">
+        <tr>
+            <th>Course Name</th>
+            <th>Course Number</th>
+            <th>Course Fees</th>
+            <th>Places</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <button onclick="myfun(arr,c)">click</button>
+        <script>
+            let arr=['Cse','ECE','EEE','Mech','Civil']
+            let b=['1','2','3','4','5']
+            let c=['100','250','300','400','500']
+            let d=['dwp','dwp','dwp','dwp','dwp']
+            function myfun(a,color){
+            var col=document.getElementsByTagName('td');
+            var j=0;
+            for(i=0;i<a.length;i++)
+            {
+                col.item(j).innerHTML=a[i];
+                j=j+1;
+                col.item(j).innerHTML=b[i];
+                j=j+1;
+                col.item(j).innerHTML=c[i];
+                j=j+1;
+                col.item(j).innerHTML=d[i];
+                j=j+1;
+            }
+        }
+
+        </script>
+</body>
+</html>

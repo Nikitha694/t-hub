@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="e_id">Heading</h1>
+    <span class="sp">This is first span</span>
+    <span class="sp">This is second span</span> -->
+    <p>This is para 1</p>
+    <p class="a">This is para 2</p>
+    <p>This is para 3</p>
+    <h2 id="head">This is id</h2>
+    <h2 id="head">This is id</h2>
+    <h3 class="new">By using class</h3>
+    <h3 class="new">By using class</h3>
+        <span>By using tag</span>
+    <a id="anchor">click here</a>
+    <span id="dis_dt"></span>
+    <script>
+        //to print entire document
+        // console.log(document)
+        // console.log(document.head)
+        // console.log(document.body)
+        //by using id 1st method
+        // const Byid=document.getElementById('e_id')
+        // Byid.style.color='red'
+        // Byid.style.fontsize='30px'
+        // console.log(Byid)
+        //by using classname 2nd method
+        // const ClsID=document.getElementsByClassName('sp')
+        // ClsID[1].style.color='blue'
+        // console.log(ClsID)
+        //by uisng tagname 3rd method
+        //by using queryselector(#id,.class,tag) 4th method
+        const qs= document.querySelector(".a")
+        qs.style.backgroundColor="pink";
+        //by using queryselectorall 5th method
+        let heads=document.querySelectorAll("#head")
+        heads[0].style.backgroundColor="orange";
+        heads[1].style.backgroundColor="brown";
+        let local=document.querySelectorAll(".new")
+        local[0].style.fontSize="60px";
+        local[1].style.fontSize="40px";
+        let element=document.querySelectorAll("span")
+        element[0].style.color="red"
+        //set attribute
+        let myanc=document.getElementById("anchor")
+        myanc.setAttribute("href","https://youtube.com")
+        myanc.setAttribute("target","_blank")
+        //create element
+        const NewBtn=document.createElement("button");
+        NewBtn.setAttribute('id','btn_id');
+        const NewDiv=document.createElement("div");
+        NewBtn.innerText="click me"
+        NewDiv.innerHTML="<h1> This is a new division</h1>"
+        NewDiv.style.cssText=  `height:200px;
+                                width:200px;
+                                color:red;
+                                padding:5px;
+                                background-color:lightblue;
+                                border-radius:50px;
+                                border:2px solid blue`;
+        //append element
+        const bdy=document.body
+        //console.log(bdy)
+        bdy.appendChild(NewBtn)
+        bdy.appendChild(NewDiv)
+
+        //eventlistner
+        const MyBtn=document.getElementById("btn_id");
+        MyBtn.addEventListener("mouseover",MyFunc1)
+        MyBtn.addEventListener("mouseout",MyFunc2)
+        MyBtn.addEventListener("click",MyFunc3) 
+
+        function MyFunc1(){
+            bdy.style.backgroundColor="skyblue"
+        }
+        function MyFunc2(){
+            bdy.style.backgroundColor="lightgreen"
+        }
+
+        function MyFunc3(){
+            let d=document.getElementById("dis_dt")
+            d.innerHTML="Todays date is"+Date()
+        }
+    </script>
+</body>
+</html>

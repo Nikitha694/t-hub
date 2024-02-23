@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px solid" style="height:100px;width:700px">
+        <tr>
+            <th>Course Name</th>
+            <th>Course Number</th>
+            <th>Course Fees</th>
+            <th>Places</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <button onclick="myfun()">click</button>
+        <script>
+            // let arr=['Cse','ECE','EEE','Mech','Civil']
+            // let b=['1','2','3','4','5']
+            // let c=['100','250','300','400','500']
+            // let d=['dwp','dwp','dwp','dwp','dwp']
+            let arr=[{
+                name:"Html",
+                Number:234,
+                fees:235,
+                place:"dwp"
+
+            },
+        {
+            name:"CSS",
+                Number:24,
+                fees:23,
+                place:"dwp"
+        },
+     {
+        name:"Html",
+                Number:234,
+                fees:235,
+                place:"dwp"
+        },
+    {
+        name:"Html",
+                Number:234,
+                fees:235,
+                place:"dwp"
+    }]
+            function myfun(){
+            var col=document.getElementsByTagName('td');
+            var j=0;
+            for(i=0;i<arr.length;i++)
+            {
+                col.item(j).innerHTML=(arr[0].name);
+                j=j+1;
+                col.item(j).innerHTML=(arr[0].Number);
+                j=j+1;
+                col.item(j).innerHTML=(arr[0].fees);
+                j=j+1;
+                col.item(j).innerHTML=(arr[0].place);
+                j=j+1;
+                col.item(j).innerHTML=(arr[1].name);
+                j=j+1;
+                col.item(j).innerHTML=(arr[1].Number);
+                j=j+1;
+                col.item(j).innerHTML=(arr[1].fees);
+                j=j+1;
+                col.item(j).innerHTML=(arr[1].place);
+                j=j+1;
+                
+            }
+        }
+
+        </script>
+</body>
+</html>

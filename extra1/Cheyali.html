@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 700px;
+            width: 100%;
+            border: 1px solid black;
+            background-color: rgb(162, 229, 255);
+            animation-name: test;
+            animation-duration: 20s;
+            animation-iteration-count: 2;
+            animation-delay: 5s;
+
+        }
+        @keyframes test{
+            from{
+                background-color: rgb(162, 229, 255);
+            }
+            to{
+                background-color: rgb(44, 43, 43);
+            }
+        }
+        .down{
+            height: 300px;
+            width: 100%;
+            background-color: greenyellow;
+            border: 1px solid black;
+            border-radius: 70% 70% 0% 0%;
+            position: relative;
+            z-index: 2;
+            animation-name: tes;
+            animation-duration: 20s;
+            animation-iteration-count: 2;
+            animation-delay: 5s;
+        }
+        @keyframes tes{
+            from{
+                background-color: greenyellow;
+            }
+            to{
+                background-color: green;
+            }
+        }
+        .up{
+            height: 400px;
+            width: 100%;
+        }
+        .sun{
+            height: 100px;
+            width: 100px;
+            border: 1px solid orange;
+            border-radius: 100%;
+            background-color: orange;
+            float: right;
+            margin-top: 500px;
+            margin-right: 00px;
+            box-shadow: -3px -3px 7px orange,5px 5px 7px orange,-5px 5px 7px orange;
+            position: relative;
+            z-index: 1;
+            /* left: 300px; */
+            animation-name: testing;
+                animation-duration: 10s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                /* animation-delay: 2s; */
+
+        }
+        @keyframes testing{
+            0%{
+                    background-color: yellow;bottom: 50px;right: 0px;
+                }
+                25%{
+                    background-color: rgb(235, 200, 27);bottom: 300px;right: 300px;
+                }
+                50%{
+                    background-color: orange;bottom: 370px;right: 620px;
+                }
+                75%{
+                    background-color: orangered;bottom: 300px;right: 950px;
+                }
+                100%{
+                    background-color: red;bottom: 200px;right: 1350px;
+                }
+        }
+        .moon{
+            height: 80px;
+            width: 80px;
+            border: 0px solid black;
+            border-radius: 50%;
+            /* background-color: white; */
+            float: right;
+            margin-top: 500px;
+            margin-right: 0px;
+            transform: translate(-50%,-50%);
+            box-shadow: -15px 15px 0 5px white;
+            position: relative;
+            z-index: 1;
+            /* left: 300px; */
+            animation-name: testing;
+                animation-duration: 10s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                animation-delay: 10s;
+
+        }
+        @keyframes testing{
+            0%{
+                    bottom: 50px;right: 0px;
+                }
+                25%{
+                    bottom: 300px;right: 300px;
+                }
+                50%{
+                    bottom: 370px;right: 620px;
+                }
+                75%{
+                    bottom: 300px;right: 950px;
+                }
+                100%{
+                   bottom: 50px;right: 1250px;
+                }
+            }
+            .star,
+.star:before,
+.star:after {
+  height: 0.18em;
+  width: 0.18em;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: twinkle 5s infinite;
+  animation-delay: 10s;
+}
+@keyframes twinkle {
+  50% {
+    opacity: 1;
+  }
+}
+.star-1 {
+  top: 5em;
+  left: 18.75em;
+}
+.star-1:before {
+  content: "";
+  top: 1.9em;
+  left: -16.4em;
+  animation-delay: 1.3s;
+}
+.star-1:after {
+  content: "";
+  left: -12.8em;
+  top: 5em;
+  animation-delay: 1.7s;
+}
+.star-2 {
+  left: 11.25em;
+  top: 3.12em;
+  animation-delay: 1.2s;
+}
+.star-2:before {
+  content: "";
+  left: 2.5em;
+  top: 8.75em;
+  animation-delay: 1.9s;
+}
+.star-2:after {
+  content: "";
+  left: 7.5em;
+  top: 6.25em;
+  animation-delay: 1.35s;
+}
+.star-3 {
+  left: 15em;
+  top: 1.9em;
+  animation-delay: 1.1s;
+}
+.star-3:before {
+  content: "";
+  top: 5em;
+  left: -0.93em;
+}
+.star-4 {
+  top: 5em;
+  right: 18.75em;
+  float: right;
+}
+.star-4:before {
+  content: "";
+  top: 1.9em;
+  right: -16.4em;
+  animation-delay: 1.3s;
+  float: right;
+}
+.star-4:after {
+  content: "";
+  right: -12.8em;
+  top: 5em;
+  animation-delay: 1.7s;
+  float: right;
+}
+.star-5 {
+  right: 11.25em;
+  top: 3.12em;
+  animation-delay: 1.2s;
+  float: right;
+}
+.star-5:before {
+  content: "";
+  right: 3em;
+  top: 9.75em;
+  animation-delay: 1.9s;
+  float: right;
+}
+.star-5:after {
+  content: "";
+  right: 10em;
+  top: 7em;
+  animation-delay: 1.35s;
+  float: right;
+}
+.star-6 {
+  right: 20em;
+  top: 2.5em;
+  animation-delay: 1.1s;
+  float: right;
+}
+.star-6:before {
+  content: "";
+  top: 7em;
+  right: -0.98em;
+  float: right;
+}
+.shooting-star {
+  height: 0.18em;
+  width: 2.5em;
+  background-color: #ffffff;
+  transform: rotate(-30deg);
+  position: absolute;
+  right: -0.62em;
+  opacity: 0.2;
+  animation: shooting-str 5s infinite;
+}
+@keyframes shooting-str {
+  10% {
+    transform: rotate(-30deg) translate(-34em, 0);
+  }
+  100% {
+    transform: rotate(-30deg) translate(-34em, 0);
+  }
+}
+.way{
+    height: 300px;
+    width: 180px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    margin-left: 650px;
+    transform: rotate(60deg);
+}
+.light{
+    height: 300px;
+    width: 12px;
+    margin-left: 50px;
+    background-color: black;
+    border-radius: 5px 5px 0px 0px;
+}
+.light1{
+    height: 15px;
+    width: 105px;
+    background-color: black;
+    transform: rotate(-20deg);
+    border-radius: 5px;
+}
+.lightbulb{
+    height: 12px;
+    width: 95px;
+    background-color: gray;
+    transform: rotate(-20deg);
+    border-radius: 5px;
+    position: relative;
+    left: 12px;
+    bottom: 10px;
+    animation-name: ligh;
+    animation-delay: 7s;
+    animation-duration: 15s;
+    
+}
+@keyframes ligh{
+    from{
+        background-color: gray;
+    }
+    to{
+        background-color: yellow;box-shadow: 3px 3px 7px yellow;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sun"></div>
+        <div class="moon"></div>
+        <div class="up">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+            <div class="star star-6"></div>
+            <div class="shooting-star"></div>
+        </div>
+        <div class="down">
+            <div class="light">
+                <div class="light1"></div>
+                <div class="lightbulb"></div>
+            </div>
+            <div class="light" style="position: relative;left: 250px;bottom: 400px;height: 200px;width: 10px;">
+                <div class="light1"></div>
+                <div class="lightbulb" style="height: 10px;width: 95px;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

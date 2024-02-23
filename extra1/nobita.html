@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobita</title>
+    <style>
+        .main{
+            height: 600px;
+            width: 600px;
+            border: 1px solid black;
+        }
+        .head{
+            height: 95px;
+            width: 113px;
+            border: 1px solid black;
+            border-radius: 0px 0px 47px 47px;
+            position: relative;
+            bottom: 90px;
+            left: 2px;
+            z-index: 2;
+            background-color: sandybrown;
+        }
+        .hair{
+            height: 130px;
+            width: 125px;
+            border-radius: 100%;
+            margin-top: 70px;
+            border: 1px solid black;
+            z-index: 1;
+            background-color: black;
+        }
+        .eye-left,.eye-right{
+            height: 35px;
+            width: 30px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background-color: white;
+            position: relative;
+            right: 12px;
+            top: 10px;
+        }
+        .eye-right{
+            left: 20px;
+            top: -26px;
+        }
+        .eye-black{
+            height: 7px;
+            width: 5px;
+            background-color: black;
+            border-radius: 100%;
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Nobita</h1>
+    <div class="main">
+        <div class="hair"></div>
+        <div class="head">
+            <div class="eye-left">
+                <div class="eye-black"></div>
+            </div>
+            <div class="eye-right">
+                <div class="eye-black"></div>
+            </div>
+        </div>
+    </div>
+    </center>
+</body>
+</html>

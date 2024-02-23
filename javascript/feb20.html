@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=['siva','raju','ravi','rani','raju','ravi','siva','raju','ravi']
+        function myFunction(a) {
+   var col = document.getElementsByTagName("td");
+     var j=0;
+   for (let i = 0; i < a.length; i++) {
+   col.item(j).innerHTML=a[i];
+   j=j+1;
+   const Tagnm=document.getElementsByTagName('td')
+        Tagnm[0].style.backgroundColor='lightblue';
+        Tagnm[1].style.backgroundColor='blue';
+        Tagnm[2].style.backgroundColor='green';
+        Tagnm[3].style.backgroundColor='orange';
+        Tagnm[4].style.backgroundColor='pink';
+        Tagnm[5].style.backgroundColor='skyblue';
+        Tagnm[6].style.backgroundColor='yellow';
+        Tagnm[7].style.backgroundColor='grey';
+        Tagnm[8].style.backgroundColor='red';
+   console.log(col);
+   }
+   }
+    </script>
+    <table border="1px solid" style="height:100px;width:1500px">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <button onclick="myFunction(arr)">click</button>
+    
+</body>
+</html>

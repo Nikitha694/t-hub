@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn_id">click here</button>
+    <button id="bn_id">click</button>
+    <script>
+        let btn=document.getElementById("btn_id")
+        //2nd way
+        btn.onclick=change;
+        function change(){
+            document.body.style.backgroundColor="lightblue";
+        }
+        let bn=document.getElementById("bn_id")
+        //3rd way
+        bn.addEventListener('mouseover',sample);
+        function sample(){
+            document.body.style.backgroundColor="orangered";
+        }
+        //anonymus
+        bn.addEventListener('click',function(){
+            document.body.style.backgroundColor="lightgreen";
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function my(str_name){
+            document.write(str_name+"<br>")
+        }
+        let str="drive ready batch";
+        let str1="new mern";
+        let str2="new batch";
+        //original value
+        my("original value:"+str);
+        //length
+        my("length:"+str.length)
+        //to find value at particular position
+        my("char at:"+str.charAt(3) )
+        //to find value at particular position
+        my("indexof:"+str.indexOf("r"))
+        my("lastindex0f:"+str.lastIndexOf("r"))
+        //uppercase
+        my("uppercase:"+str.toUpperCase())
+        //lowercase
+        my("lowercase:"+str.toLowerCase())
+        //to add multiple strings
+        my("multiple strings:"+str.concat(str1))
+        my("multiple strings:"+str.concat(str1,str2))
+        //removing white spaces
+        my("trim strings:"+str.trim())
+        //converting string into array
+        my("strings to array:"+str.split(""))
+        let s="uday&srinu&sai"
+        document.write("strings to array:"+s.split("&")+"<br>")
+        //return boolean values
+        my('startswith of string='+str.startsWith('d'))
+        my('endswith of string='+str.endsWith('h'))
+        console.log(str1.split(""));
+        my('slice of string:'+str.slice(0,7));
+        my('slice of string:'+str.slice(13,17));
+        my('slice of string:'+str.slice(-7));
+        my('slice of string:'+str.slice(-7,-4));
+        my('substring of string:'+str.substring(7,11));
+        my('substr of string:'+str.substr(5,7));
+        my('includes of string:'+str.includes('college'));
+        my('repeat of string:'+str2.repeat(2));
+        my ('replace of string:'+str.replace('adtya','sri aditya'));
+    </script>
+</body>
+</html>

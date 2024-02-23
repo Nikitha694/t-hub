@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            width: 250px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">get numbers</button>
+    <table>
+        <tr>
+            <td>
+            </td>
+            <td>
+
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+       
+       document.getElementById("btn").addEventListener("click",()=>{
+        var a=document.querySelectorAll("td");
+     
+        for(var i=0;i<a.length;i++){
+            a[i].innerText=i+1;
+        }
+    
+    
+   
+   
+
+       });
+       
+
+    </script>
+</body>
+</html>

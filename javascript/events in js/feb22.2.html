@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Enter <input type="text" onkeypress="get(this.value)" id="f">
+        <p id="p_id"></p>
+        <p id="i_id"></p>
+    </form>
+    <script>
+        function get(value){
+            let a=document.getElementById("f").value
+            if(a.length<3){
+                document.getElementById("p_id").innerHTML="Please enter more than 3 characters"
+                document.getElementById("f").style.cssText=`border-color:red`
+            }
+            else{
+                document.getElementById("p_id").innerHTML=""
+                document.getElementById("f").style.cssText=`border-color:black`
+            }
+          
+                document.getElementById("i_id").innerHTML="The length:"+a.length;
+         
+    }
+    document.getElementById("p_id").style.color="red"
+    </script>
+</body>
+</html>

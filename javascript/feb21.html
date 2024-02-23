@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count in JS</title>
+    <style>
+        #count {
+  display: inline;
+  margin: 15px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Count</h1><br>
+        <button id="my-button">Decrement</button>
+        <p id="count">0</p>
+        <button id="my-button2">Increment</button>
+      </div>
+    <script>
+        var button = document.getElementById('my-button');
+        var button2 = document.getElementById('my-button2');
+        var display = document.getElementById('count');
+        var count = 0;
+        button.addEventListener('click', function() {
+        count--
+        display.innerHTML = count; 
+        });
+        button2.addEventListener('click', function() {
+            count++
+        display.innerHTML = count; 
+        });
+    </script>
+</body>
+</html>

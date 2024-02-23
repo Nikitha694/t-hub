@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" onkeyup="color(this.value)" id="color">
+    <script>
+        function color(value){
+            document.getElementById('p-id').innerHTML=value;
+            document.body.style.backgroundColor=value;
+
+        }
+    </script>
+</body>
+</html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+</head>
+<body>
+    <form>
+        <label>Enter colour:</label>
+        <input type="text" onkeyup="color(this.value)"><br>
+        <p id="p-id"></p>
+    </form>
+    <script>
+        function color(value){
+            document.getElementById('p-id').innerHTML=value;
+            document.body.style.backgroundColor=value;
+        }
+    </script>
+</body>
+</html>
