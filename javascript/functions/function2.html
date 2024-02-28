@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun1</title>
+</head>
+<body>
+    <script>
+        //function with no parameters
+        myfun()
+        function myfun(){
+            console.log("WELCOME")
+        }
+        //function with one parameter
+        getname("Nikitha")
+        function getname(name){
+            console.log(name)
+        }
+
+        //function with two arguments
+        //function add(a=0,b=0){
+            //document.write("addition"+(a+b))
+        //}
+
+        //arrow function
+        const add=(a,b) =>{
+            document.write("addition"+(a+b)+"<br>")
+        }
+        add(10,20)
+        //string values
+        const name=(x,y) =>{
+            document.write(x+" "+y)
+        }
+        name("Likhitha","Pedapudi")
+        //boolean values
+        const nm=(x,y) =>{
+            console.log(x+y)
+        }
+        //nm(false,"2")//false2
+        //nm(false,"true")//falsetrue
+        //nm(1,"true")//1true
+        //nm(false,true)//1
+        nm(true,true)//2
+
+        //time function
+        setTimeout(()=>{
+            document.write("after 3 seconds")
+        },3000)
+        //call by function
+        setTimeout(test,2000)
+        function test(){
+            document.write("after 2 seconds")
+        }
+    </script>
+</body>
+</html>

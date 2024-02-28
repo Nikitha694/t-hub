@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let birthyear=[1998,1999,2004,2005];
+
+        //anonymous function
+        // let ages=birthyear.map(function(ele,index,arr){
+        //     let age=2024-ele;
+        //     return "current age is"+age;
+        // })
+        // console.log("current years:"+birthyear)
+        // console.table(ages)
+
+        //normal function
+        // let ages=birthyear.map(findage)
+        // function findage(year,index,arr){
+        //     console.table("current years:"+year)
+        //     console.table("current index:"+index)
+        //     console.table("current arr:"+arr)
+        //     let age=2024-year;
+        //     console.table(age)
+        // }
+
+        //arrow function
+            let b=birthyear.map((ele,index,arr)=>{
+                let age=2024-ele;
+                return "current age is:"+age
+            })
+            console.log("current years:"+birthyear)
+            console.table(b)
+
+    </script>
+</body>
+</html>

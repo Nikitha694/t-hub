@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table Operations</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Product List</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label for="price">Price:</label>
+    <input type="text" id="price"><br><br>
+
+    <button onclick="addRow()" style="background-color: skyblue; color: white;border: white;">+ Add new</button>
+
+    <br><br>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>peoduct id</th>
+                <th>name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        let productTable = document.getElementById('productTable');
+let nextId = 1; // Start with a unique ID
+
+function addRow() {
+    let name = document.getElementById('name').value;
+    let price = document.getElementById('price').value;
+
+    if (name && price) {
+        let row = productTable.insertRow();
+        row.id = "row" + nextId;
+        let nameCell = row.insertCell();
+        let priceCell = row.insertCell();
+        let actionsCell = row.insertCell();
+
+        nameCell.innerHTML = name;
+        priceCell.innerHTML = price;
+
+        actionsCell.innerHTML = `
+            <button onclick="editRow(this)">Edit</button>
+            <button onclick="deleteRow(this)">Delete</button>
+        `;
+
+        document.getElementById('name').value = '';
+        document.getElementById('price').value = '';
+
+        nextId++;
+    } else {
+        alert("Please enter name and price.");
+    }
+}
+
+function editRow(button) {
+    let row = button.parentNode.parentNode; // Get the parent <tr> element
+    let nameCell = row.cells[0];
+    let priceCell = row.cells[1];
+
+    // Replace cells with input fields
+    nameCell.innerHTML = <input type="text" id="nameEdit${row.id}" value="${nameCell.textContent}">;
+    priceCell.innerHTML = <input type="text" id="priceEdit${row.id}" value="${priceCell.textContent}">;
+        
+    // Change Edit button to Save 
+    button.textContent = "Save";
+    button.onclick = function() { saveRow(this) }; 
+}
+
+function saveRow(button) {
+    let row = button.parentNode.parentNode;
+    let nameEdit = document.getElementById('nameEdit' + row.id).value;
+    let priceEdit = document.getElementById('priceEdit' + row.id).value;
+
+    row.cells[0].innerHTML = nameEdit;
+    row.cells[1].innerHTML = priceEdit;
+
+    // Change Save button back to Edit
+    button.textContent = "Edit";
+    button.onclick = function() { editRow(this) }; 
+}
+
+    function deleteRow(button) {
+    let row = button.parentNode.parentNode;        
+    row.parentNode.removeChild(row);
+}
+
+    </script>
+</body>
+</html>

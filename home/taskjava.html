@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function my(str_name){
+            document.write(str_name+"<br>")
+        }
+        let str="batch drive ready";
+        let str1="forenoon";
+        let str2="afternoon";
+        //Finding substr
+        my('Substr of string:'+str.substr(5,7));
+        //Finding substring
+        my('Substring of string:'+str.substring(7,11));
+        //replacing with other strings
+        my ('Replace of string:'+str.replace('adtya','sri aditya'));
+        //searching
+        my('Searching of a string:'+str.search("r"));
+        //converting to lower case
+        my("Lowercase:"+str.toLocaleLowerCase())
+        //converting to uppercase
+        my("Uppercase:"+str.toLocaleUpperCase())
+        //finding the indexof
+        my("Indexof:"+str.indexOf("r"))
+        //includes of string
+        my('Includes of string:'+str.includes('college'));
+        //slicing the string
+        my('Slice of string:'+str.slice(0,7));
+        //concatination
+        my("Multiple strings:"+str.concat(str1,str2))
+        //lastindexof
+        my("Lastindex0f:"+str.lastIndexOf("r"))
+        //to find value at particular position
+        my("Char code at:"+str.charCodeAt(3))
+        //removing white spaces
+        my("Trim strings:"+str.trim())
+         //to find value at particular position
+         my("Char at:"+str.charAt(3))
+         //valueof
+         my("value of:"+str.valueOf())
+          //converting string into array
+        my("Strings to array:"+str.split(""))
+        let s="uday&srinu&sai"
+        document.write("strings to array:"+s.split("&")+"<br>")
+        //tostrign()
+        my("To string:"+str.toString())
+        //match
+        my("match:"+str.match(str1|str2))
+        
+    </script>
+</body>
+</html>

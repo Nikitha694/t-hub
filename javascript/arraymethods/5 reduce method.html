@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums=[7,90,8];
+
+        let sum=nums.reduce(function(acc,ele){
+            return acc+ele;
+        },0);
+        console.log("sum of numbers :"+sum)
+
+        let max_val=nums.reduce(function(acc,ele){
+            if (acc>ele){
+                return acc;
+            }
+            else{
+                return ele;
+            }
+        },nums[0]);
+        console.log("max_value is :"+max_val)
+    </script>
+</body>
+</html>

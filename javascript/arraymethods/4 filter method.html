@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums=[8,9,25,40,90,87];
+        console.table(nums)
+
+        //arrow function
+        let even_nums=nums.filter((ele,i)=>{
+            return ele%2==0;
+        })
+        console.log("Even numbers:"+even_nums)
+
+        let odd_nums=nums.filter((ele,i)=>{
+            return ele%2!=0;
+        })
+        console.log("odd numbers:"+odd_nums)
+
+        //anonymous function
+        let nums1=[90,56,77,31,23,42]
+        console.table(nums1)
+        let even_nums1=nums1.filter(function(ele,i){
+            return ele%2==0;
+        })
+        console.log("Even numbers:"+even_nums1)
+
+        let odd_nums1=nums1.filter(function(ele,i){
+            return ele%2!=0;
+        })
+        console.log("odd numbers:"+odd_nums1)
+
+        //normal function
+        let nums2=[67,34,54,55,89,20];
+        console.table(nums2)
+        let even_nums2=nums2.filter(numfun)
+        function numfun(ele,i){
+            return ele%2==0;
+        }
+        console.log("Even numbers:"+even_nums2)
+
+        let odd_nums2=nums2.filter(numfunc1)
+        
+        function numfunc1(ele,i){
+            return ele%2!=0;
+        }
+        console.log("odd numbers:"+odd_nums2)
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array methods in js</h1>
+    <ul>
+        <li>push</li>
+        <li>pop</li>
+        <li>shift</li>
+        <li>unshift</li>
+        <li>concat</li>
+        <li>slice</li>
+        <li>splice</li>
+        <li>indexof</li>
+        <li>sort</li>
+    </ul>
+    <script>
+        let arr1=['banana','orange','apple']
+        let arr2=['carrot','brinjal']
+        //main array
+        console.log(arr1)
+        //push
+        arr1.push('tomato')
+        console.log(arr1)
+        //pop
+        arr1.pop()
+        console.log(arr1)
+        //shift
+        arr1.shift()
+        console.log(arr1)
+        //unshift
+        arr1.unshift('potato')
+        console.log(arr1)
+        //concat
+        all=arr1.concat(arr2)
+        console.log(all)
+        //slice
+        sli=all.slice(1,4)
+        console.log(sli)
+        //splice
+        all.splice(1,2,'kiwi','tom')
+        console.log(all)
+
+        //sort
+        all.sort()
+        console.log(all)
+        //indexof
+        let index=all.indexOf('tom')
+        console.log(index)
+        
+    </script>
+</body>
+</html>

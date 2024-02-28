@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <style>
+        .palindrome {  
+        margin: auto;  
+        width: 40%;  
+        border: 3px solid gray;  
+        border-radius: 5px;  
+        padding: 30px;  
+        }  
+          
+        #palindrome {  
+        width: 100%;  
+        border: 3px solid gray;  
+        border-radius: 5px;  
+        padding: 6px;  
+        }  
+        </style>  
+</head>
+    <body>  
+        <center><h1>Palindrome</h1><hr></center>
+        <div class="palindrome">  
+        <label> Enter any number : </label> <br> <br>  
+        <input id= "pal"> <br> <br>  
+        <button type = "button" onclick = "pal()" > Check </button>  
+        </div>  
+        <script>  
+            function pal() {  
+            var a, b, no, temp = 0;  
+            no = Number(document.getElementById ("pal").value);  
+            b = no;  
+            while (no > 0)  
+            {  
+            a = no % 10;  
+            no = parseInt( no / 10);  
+            temp = temp*10 + a;  
+            }  
+            if (temp == b)  
+            {  
+            alert( "It is a Palindrome Number");  
+            }  
+            else  
+            {  
+            alert ("it is not a Palindrome Number");  
+            }  
+            }  
+        </script>
+    </body>  
+</html> 

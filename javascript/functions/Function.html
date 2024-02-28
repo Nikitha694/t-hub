@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter Name</label>
+    <input type="text" id="name-id">
+    <br><br>
+    <label>Enter pin number</label>
+    <input type="text" id="pin-id">
+    <br><br>
+    <label>Enter branch</label>
+    <input type="text" id="branch-id">
+    <br><br>
+    <button type="submit" onclick="getdetails()">Submit</button>
+    <script>
+        function getdetails(){
+            var x=document.getElementById("name-id").value;
+            var y=document.getElementById("pin-id").value;
+            var z=document.getElementById("branch-id").value;
+            if(x.length<1){
+            alert("Please enter your details")
+        }
+        else if(y.length<1) {
+            alert("Please enter your details")
+        }
+        else if(z.length<1){
+            alert("Please enter your details")
+        }
+        else{
+            alert("Thank you")
+        }
+        }
+
+    </script>
+</body>
+</html>
